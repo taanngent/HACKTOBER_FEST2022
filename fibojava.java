@@ -16,7 +16,7 @@ public class Main
 			counter = counter + 1;
 		}
 	}
-	// Driver Code
+	// Driver Codes
 	public static void main(String args[])
 	{	// Given Number N
 		int N = 10;
