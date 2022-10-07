@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JSFormDemo </title>
+<script>
+function ValidateEmail()
+{
+var mailid=document.getElementById("email")
+var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+if(mailid.value.match(mailformat))
+{
+alert("You have entered a valid email address!");    
+}
+else
+{
+alert("You have entered an invalid email address!");    
+}
+}
+</script>
+</head>
+
+<body>
+<table border = "2">
+<tr>
+ <td> Name </td>
+ <td><input type="text"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" id="email"></td>
+</tr>
+<tr>
+<td>Zip Code</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Country</td>
+<td>
+<select>
+  <option value="INDIA">INDIA</option>
+  <option value="EGYPT">EGYPT</option>
+  <option value="AUSTRALIA">AUSTRALIA</option>
+  <option value="AMERICA">AMERICA</option>
+</select>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td><input type="submit" value="Submit" onclick="ValidateEmail()"></td>
+</tr>
+</table>
+</body>
+</html>
